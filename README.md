@@ -36,7 +36,7 @@ The instructions below assume that you're using environment variables to configu
 Registering a bot with the Microsoft Bot Framework automatically creates a corresponding Azure AD application with the same name and ID. 
 1. Go to the [Application Registration Portal](https://apps.dev.microsoft.com) and sign in with the same account that you used to register your bot.
 2. Find your application in the list and click on the name to edit.
-3. Click on "Add platform", choose "Web", then add the following redirect URLs:
+3. Click on "Redirect URIs" under "Anthentication" tab, choose "Web", then add the following redirect URLs:
      * `https://<your_ngrok_url>/auth/azureADv1/callback`
      * `https://<your_ngrok_url>/tab/simple-end`
      * `https://<your_ngrok_url>/tab/silent-end`
